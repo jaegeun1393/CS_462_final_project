@@ -1,0 +1,34 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "attributes": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "object",
+            "properties": {
+              "short_name" : { "bsonType": "string" },
+              "value_json": { "bsonType" : "string" }
+            }
+          }
+        },
+        "incident_id": {
+            "bsonType": "int"
+        },
+        "namespace": {
+            "bsonType": "string"
+        },
+        "notes": {
+            "bsonType": "string"
+        },
+        "publish": {
+          "bsonType": "bool"
+        }
+    },
+    "required": [
+        "incident_id",
+        "namespace"
+    ],
+    "title": "classification"
+}
